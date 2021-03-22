@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import TheDashboard from './components/TheDashboard.vue'
-import TheSidebar from './components/TheSidebar.vue'
+import TheDashboard from './components/TheDashboard/TheDashboard.vue'
+import TheSidebar from './components/TheSidebar/TheSidebar.vue'
 
 export default {
   components: { TheSidebar, TheDashboard },
@@ -37,6 +37,5 @@ a {
 
 .app {
   display: flex;
-  background-color: orange;
 }
 </style>
