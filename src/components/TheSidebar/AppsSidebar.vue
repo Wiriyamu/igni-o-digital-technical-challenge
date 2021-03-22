@@ -3,22 +3,19 @@
     <p class="nav-apps">Apps</p>
     <ul>
       <li class="nav-item">
-        <img src="@/assets/images/TheSidebar/mail.svg" alt="Email" />
+        <img src="@/assets/images/mail.svg" alt="Email" />
         <p class="nav-item-text">Email</p>
       </li>
       <li class="nav-item">
-        <img
-          src="@/assets/images/TheSidebar/message-square.svg"
-          alt="Conversar"
-        />
+        <img src="@/assets/images/message-square.svg" alt="Conversar" />
         <p class="nav-item-text">Conversar</p>
       </li>
       <li class="nav-item">
-        <img src="@/assets/images/TheSidebar/check-square.svg" alt="Todo" />
+        <img src="@/assets/images/check-square.svg" alt="Todo" />
         <p class="nav-item-text">Todo</p>
       </li>
       <li class="nav-item">
-        <img src="@/assets/images/TheSidebar/calendar.svg" alt="Calendário" />
+        <img src="@/assets/images/calendar.svg" alt="Calendário" />
         <p class="nav-item-text">Calendário</p>
       </li>
     </ul>

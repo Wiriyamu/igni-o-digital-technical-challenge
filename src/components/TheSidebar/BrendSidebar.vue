@@ -1,6 +1,6 @@
 <template>
   <figure class="logo">
-    <img src="@/assets/images/TheSidebar/igd-logo.svg" alt="logo" />
+    <img src="@/assets/images/igd-logo.svg" alt="logo" />
   </figure>
 </template>
 
