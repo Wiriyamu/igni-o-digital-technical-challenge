@@ -7,6 +7,8 @@
       <filters-dashboard />
       <list-dashboard />
     </section>
+
+    <pagination-dashboard />
   </section>
 </template>
 
@@ -15,13 +17,15 @@ import BreadcrumbsDashboard from './BreadcrumbsDashboard.vue'
 import FiltersDashboard from './FiltersDashboard.vue'
 import ListDashboard from './ListDashboard.vue'
 import NavbarDashboard from './NavbarDashboard.vue'
+import PaginationDashboard from './PaginationDashboard.vue'
 export default {
   name: 'TheDashboard',
   components: {
     NavbarDashboard,
     BreadcrumbsDashboard,
     FiltersDashboard,
-    ListDashboard
+    ListDashboard,
+    PaginationDashboard
   }
 }
 </script>
