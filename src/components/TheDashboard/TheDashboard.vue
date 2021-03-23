@@ -1,14 +1,16 @@
 <template>
   <section class="dashboard">
     <navbar-dashboard />
+    <breadcrumbs-dashboard />
   </section>
 </template>
 
 <script>
+import BreadcrumbsDashboard from './BreadcrumbsDashboard.vue'
 import NavbarDashboard from './NavbarDashboard.vue'
 export default {
   name: 'TheDashboard',
-  components: { NavbarDashboard },
+  components: { NavbarDashboard, BreadcrumbsDashboard },
   setup() {
     return {}
   }
