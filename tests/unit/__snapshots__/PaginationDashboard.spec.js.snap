@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PaginationDashboard.vue Snapshot component 1`] = `
+<section class="pagination"><img class="pagination__back" src="" alt="back">
+  <ul class="pagination__pages">
+    <li class="pagination__page">1</li>
+    <li class="pagination__page">2</li>
+    <li class="pagination__page">3</li>
+    <li class="pagination__page">4</li>
+    <li class="pagination__page">5</li>
+    <li class="pagination__page">6</li>
+    <li class="pagination__page">7</li>
+    <li class="pagination__page">8</li>
+    <li class="pagination__page">9</li>
+    <li class="pagination__page">10</li>
+  </ul><img class="pagination__next" src="" alt="next">
+</section>
+`;
