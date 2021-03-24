@@ -1,7 +1,7 @@
 <template>
   <section class="list">
     <div class="list__actions">
-      <p>200 resultados encontrados</p>
+      <p class="list__amount">200 resultados encontrados</p>
 
       <div class="list__buttons">
         <select class="list__select">
@@ -18,7 +18,14 @@
       </div>
     </div>
 
-    <input class="list__search" placeholder="Buscar" />
+    <div class="list__search-container">
+      <input class="list__search" placeholder="Buscar" />
+      <img
+        class="list__search-icon"
+        src="@/assets/images/search.svg"
+        alt="Pesquisa"
+      />
+    </div>
 
     <list-item-dashboard />
     <list-item-dashboard />
@@ -37,14 +44,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/sass/abstracts/_variables.scss';
+
 .list {
   width: 100%;
-  margin: 30px 20px 0 20px;
+  margin: 3rem 2rem 0 2rem;
 
   &__actions {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  &__amount {
+    font-size: 1.8rem;
   }
 
   &__buttons {
@@ -54,35 +67,45 @@ export default {
   }
 
   &__select {
-    width: 130px;
-    padding: 5px;
+    width: 13rem;
+    padding: 0.3125rem;
     border: 0;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
   }
 
   &__grid,
   &__list {
     display: flex;
     justify-content: center;
-    width: 30px;
-    height: 30px;
-    margin-left: 10px;
-    border-radius: 5px;
-    background-color: #fff;
+    width: 3rem;
+    height: 3rem;
+    margin-left: 0.625rem;
+    border-radius: 0.3125rem;
+    background-color: $white;
     cursor: pointer;
 
     & img {
-      width: 15px;
+      width: 1.5rem;
     }
+  }
+
+  &__search-container {
+    position: relative;
   }
 
   &__search {
     width: 100%;
-    height: 50px;
-    margin: 20px 0 30px 0;
-    padding: 20px;
+    height: 5rem;
+    margin: 2rem 0 3rem 0;
+    padding: 2rem;
     border: 0;
-    border-radius: 5px;
+    border-radius: 0.3125rem;
+  }
+
+  &__search-icon {
+    position: absolute;
+    top: 3.5rem;
+    right: 2.5rem;
   }
 }
 </style>

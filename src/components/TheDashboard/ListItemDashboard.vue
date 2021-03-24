@@ -6,7 +6,7 @@
 
     <div class="item__texts">
       <p class="item__title">Fórmula de lançamento</p>
-      <p>Por <strong>Érico Rocha</strong></p>
+      <p class="item__author">Por <strong>Érico Rocha</strong></p>
       <p class="item__description">
         Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -48,47 +48,58 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/sass/abstracts/_variables.scss';
+
 .item {
   display: flex;
   width: 100%;
-  margin-bottom: 20px;
-  padding: 0 10px;
-  border-radius: 5px;
-  background-color: #fff;
+  margin-bottom: 2rem;
+  padding: 0 0.625rem;
+  border-radius: 0.3215rem;
+  background-color: $white;
 
   &__photo {
-    width: 180px;
-    margin: 10px 10px 10px 0;
+    width: 18rem;
+    margin: 0.625rem 1.5rem 0.625rem 0;
   }
 
   &__texts {
-    margin-top: 20px;
+    margin-top: 2rem;
   }
 
   &__title {
-    margin: 10px 0;
+    margin: 0.625rem 0;
     text-transform: uppercase;
   }
 
+  &__author {
+    font-size: 1.2rem;
+  }
+
   &__description {
-    max-width: 500px;
+    max-width: 50rem;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 0.625rem;
+    font-size: 1.4rem;
+    font-weight: $light;
   }
 
   &__star-button {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 10px 0 0 130px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    color: #fff;
-    background-color: #1a5cff;
+    margin: 0.625rem 0 0 13rem;
+    padding: 0.3215rem 0.625rem;
+    border-radius: 0.3215rem;
+    color: $white;
+    background: #ec008c;
+    background: -webkit-linear-gradient(to right, #fc6767, #ec008c);
+    background: linear-gradient(to right, #fc6767, #ec008c);
   }
 
   &__star-note {
-    margin-right: 5px;
+    margin-right: 0.3215rem;
+    font-size: 1.4rem;
   }
 
   &__buttons {
@@ -99,8 +110,8 @@ export default {
   }
 
   &__price {
-    margin: 10px 0 20px 0;
-    font-size: 18px;
+    margin: 0.625rem 0 2rem 0;
+    font-size: 1.8rem;
   }
 
   &__heart-box,
@@ -108,26 +119,38 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
-    height: 35px;
-    margin-bottom: 10px;
-    border-radius: 5px;
+    width: 15rem;
+    height: 3.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.3125rem;
+    font-size: 1.4rem;
+    font-weight: $semiBold;
     cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+    &:hover {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
   }
 
   &__heart-box {
-    color: #fff;
-    background-color: #f08080;
+    color: $white;
+    background: #cc95c0;
+    background: -webkit-linear-gradient(to right, #7aa1d2, #dbd4b4, #cc95c0);
+    background: linear-gradient(to right, #7aa1d2, #dbd4b4, #cc95c0);
   }
 
   &__bag-box {
-    color: #fff;
-    background-color: #ff7b1b;
+    color: $white;
+    background: #ee0979;
+    background: -webkit-linear-gradient(to right, #ee0979, #ff6a00);
+    background: linear-gradient(to right, #ee0979, #ff6a00);
   }
 
   &__heart-text,
   &__bag-text {
-    margin-left: 5px;
+    margin-left: 0.3125rem;
   }
 }
 </style>
