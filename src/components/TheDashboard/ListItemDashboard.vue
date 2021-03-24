@@ -1,6 +1,6 @@
 <template>
   <section class="item">
-    <figure>
+    <figure class="item__photo-container">
       <img class="item__photo" src="@/assets/images/image.svg" alt="Photo" />
     </figure>
 
@@ -58,13 +58,35 @@ export default {
   border-radius: 0.3215rem;
   background-color: $white;
 
+  @media screen and (max-width: 1400px) {
+    flex-direction: column;
+  }
+
+  &__photo-container {
+    @media screen and (max-width: 1400px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
   &__photo {
     width: 18rem;
     margin: 0.625rem 1.5rem 0.625rem 0;
+
+    @media screen and (max-width: 1400px) {
+      width: 20rem;
+    }
   }
 
   &__texts {
     margin-top: 2rem;
+
+    @media screen and (max-width: 1400px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
   }
 
   &__title {
@@ -82,6 +104,10 @@ export default {
     margin-top: 0.625rem;
     font-size: 1.4rem;
     font-weight: $light;
+
+    @media screen and (max-width: 1400px) {
+      text-align: center;
+    }
   }
 
   &__star-button {
@@ -95,6 +121,10 @@ export default {
     background: #ec008c;
     background: -webkit-linear-gradient(to right, #fc6767, #ec008c);
     background: linear-gradient(to right, #fc6767, #ec008c);
+
+    @media screen and (max-width: 1400px) {
+      display: none;
+    }
   }
 
   &__star-note {

@@ -135,6 +135,13 @@ export default {
     padding: 2rem;
     border-radius: 0.625rem;
     background-color: $white;
+
+    @media screen and (max-width: 1100px) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 50rem;
+    }
   }
 
   &__title-price {
@@ -161,6 +168,10 @@ export default {
     margin: 2rem 0;
     font-size: 1.8rem;
     font-weight: $semiBold;
+
+    @media screen and (max-width: 1100px) {
+      margin: 0;
+    }
   }
 
   &__range-values {
@@ -224,6 +235,10 @@ export default {
   &__category-price {
     font-size: 1.5rem;
     font-weight: $light;
+
+    @media screen and (max-width: 1100px) {
+      margin: 0 2rem;
+    }
   }
 
   &__assessment {
@@ -239,6 +254,10 @@ export default {
   &__star-assessment {
     font-size: 1.4rem;
     font-weight: $light;
+
+    @media screen and (max-width: 1100px) {
+      margin: 0 2rem;
+    }
   }
 
   &__box-assessment {

@@ -19,6 +19,11 @@ export default {
 .select {
   position: relative;
 
+  @media screen and (max-width: 800px) {
+    display: flex;
+    justify-content: center;
+  }
+
   &__select {
     max-width: 23rem;
     width: 100%;
@@ -28,12 +33,20 @@ export default {
     border: 0;
     border-radius: 0.3125rem;
     background-color: $selectSidebarBg;
+
+    @media screen and (max-width: 800px) {
+      padding: 0.3125rem 0.3125rem;
+    }
   }
 
   &__icon {
     position: absolute;
     top: 0.8rem;
     left: 3rem;
+
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
   }
 }
 </style>

@@ -40,9 +40,17 @@ export default {
   justify-content: space-between;
   margin: 2rem 0;
 
+  @media screen and (max-width: 800px) {
+    flex-wrap: wrap;
+  }
+
   &__left {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 800px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__results {

@@ -1,7 +1,7 @@
 <template>
   <nav class="apps">
     <p class="apps__title">Apps</p>
-    <ul>
+    <ul class="apps__list">
       <li class="apps__item">
         <img src="@/assets/images/mail.svg" alt="Email" />
         <p class="apps__item-text">Email</p>
@@ -34,10 +34,22 @@ export default {
 .apps {
   margin: 5rem 0 0 3rem;
 
+  &__list {
+    @media screen and (max-width: 800px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
   &__title {
     margin-bottom: 0.625rem;
     text-transform: uppercase;
     color: $appsSidebarTitle;
+
+    @media screen and (max-width: 800px) {
+      text-align: center;
+    }
   }
 
   &__item {
@@ -52,6 +64,10 @@ export default {
 
   &__item-text {
     margin-left: 0.625rem;
+
+    @media screen and (max-width: 800px) {
+      margin: 0 2rem;
+    }
   }
 }
 </style>

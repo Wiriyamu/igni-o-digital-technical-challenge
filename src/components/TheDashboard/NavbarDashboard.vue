@@ -55,6 +55,12 @@ export default {
   border-radius: 0.3125rem;
   background-color: $white;
 
+  @media screen and (max-width: 800px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+  }
+
   &__icons-left {
     display: flex;
     align-items: center;

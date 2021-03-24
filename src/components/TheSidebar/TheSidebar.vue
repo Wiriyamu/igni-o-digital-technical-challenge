@@ -23,6 +23,15 @@ export default {
   width: 100%;
   height: 100vh;
 
+  @media screen and (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+  }
+
   &__nav {
     margin: 50px 0 10px 30px;
   }
