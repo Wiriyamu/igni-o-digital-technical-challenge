@@ -62,8 +62,10 @@ export default {
     width: 4rem;
     height: 4rem;
     border-radius: 4rem;
-    background-color: $orange;
     cursor: pointer;
+    background: #ec008c;
+    background: -webkit-linear-gradient(to right, #fc6767, #ec008c);
+    background: linear-gradient(to right, #fc6767, #ec008c);
   }
 
   &__settings {
