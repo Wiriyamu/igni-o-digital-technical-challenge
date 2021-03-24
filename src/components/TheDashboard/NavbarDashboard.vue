@@ -28,8 +28,8 @@
       />
       <img class="nav__icon" src="@/assets/images/search.svg" alt="Pesquisa" />
 
-      <div class="nav__name-user">
-        <p class="nav__username">Maria Elza</p>
+      <div class="nav__username">
+        <p class="nav__fullname">Maria Elza</p>
         <p class="nav__client">Cliente VIP</p>
       </div>
       <img src="@/assets/images/user.svg" alt="Usuário" />
@@ -44,14 +44,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/sass/abstracts/_variables.scss';
+
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
-  padding: 20px 20px;
-  border-radius: 5px;
-  background-color: #fff;
+  height: 6rem;
+  padding: 2rem 2rem;
+  border-radius: 0.3125rem;
+  background-color: $white;
 
   &__icons-left {
     display: flex;
@@ -60,7 +62,7 @@ export default {
   }
 
   &__icon {
-    margin-right: 20px;
+    margin-right: 2rem;
     cursor: pointer;
 
     &:hover {
@@ -74,13 +76,18 @@ export default {
     align-items: center;
   }
 
-  &__name-user {
-    margin-left: 5px;
+  &__username {
+    margin-right: 0.3125rem;
+  }
+
+  &__fullname {
+    font-size: 0.875rem;
   }
 
   &__client {
-    margin-left: 10px;
-    font-size: 11px;
+    margin-left: 0.625rem;
+    font-size: 0.6875rem;
+    font-weight: $light;
   }
 }
 </style>
