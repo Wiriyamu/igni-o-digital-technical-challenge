@@ -34,11 +34,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/sass/abstracts/_variables.scss';
+
 .pagination {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 10rem;
 
   &__pages {
     display: flex;
@@ -47,11 +49,13 @@ export default {
 
   &__back,
   &__next {
-    width: 30px;
-    height: 30px;
-    padding: 10px;
-    border-radius: 40px;
-    background-color: orange;
+    width: 3rem;
+    height: 3rem;
+    padding: 0.625rem;
+    border-radius: 4rem;
+    background: #ec008c;
+    background: -webkit-linear-gradient(to right, #fc6767, #ec008c);
+    background: linear-gradient(to right, #fc6767, #ec008c);
     cursor: pointer;
 
     &:hover {
@@ -63,27 +67,30 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 40px;
-    margin: 0 20px;
-    padding: 0 20px;
-    border-radius: 40px;
+    height: 5rem;
+    margin: 0 2rem;
+    padding: 0 3rem 0 2rem;
+    border-radius: 4rem;
     background-color: #ededed;
   }
 
   &__page {
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
-    color: #000000;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.625rem;
+    color: $black;
     text-align: center;
     cursor: pointer;
+    font-size: 1.8rem;
 
     &:hover {
-      width: 20px;
-      height: 20px;
-      border-radius: 20px;
-      color: #fff;
-      background-color: orange;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 2rem;
+      color: $white;
+      background: #ec008c;
+      background: -webkit-linear-gradient(to right, #fc6767, #ec008c);
+      background: linear-gradient(to right, #fc6767, #ec008c);
     }
   }
 }
