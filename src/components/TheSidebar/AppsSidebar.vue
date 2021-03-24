@@ -1,22 +1,22 @@
 <template>
-  <nav class="nav">
-    <p class="nav-apps">Apps</p>
+  <nav class="apps">
+    <p class="apps__title">Apps</p>
     <ul>
-      <li class="nav-item">
+      <li class="apps__item">
         <img src="@/assets/images/mail.svg" alt="Email" />
-        <p class="nav-item-text">Email</p>
+        <p class="apps__item-text">Email</p>
       </li>
-      <li class="nav-item">
+      <li class="apps__item">
         <img src="@/assets/images/message-square.svg" alt="Conversar" />
-        <p class="nav-item-text">Conversar</p>
+        <p class="apps__item-text">Conversar</p>
       </li>
-      <li class="nav-item">
+      <li class="apps__item">
         <img src="@/assets/images/check-square.svg" alt="Todo" />
-        <p class="nav-item-text">Todo</p>
+        <p class="apps__item-text">Todo</p>
       </li>
-      <li class="nav-item">
+      <li class="apps__item">
         <img src="@/assets/images/calendar.svg" alt="Calendário" />
-        <p class="nav-item-text">Calendário</p>
+        <p class="apps__item-text">Calendário</p>
       </li>
     </ul>
   </nav>
@@ -29,29 +29,29 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.nav {
-  margin: 50px 0 10px 30px;
-}
+@import '@/assets/sass/abstracts/_variables.scss';
 
-.nav-apps {
-  margin-bottom: 10px;
-  font-weight: 300;
-  text-transform: uppercase;
-  color: #999999;
-}
+.apps {
+  margin: 5rem 0 0 3rem;
 
-.nav-item {
-  display: flex;
-  margin: 20px 0;
-  cursor: pointer;
-
-  &:hover {
-    opacity: 0.8;
+  &__title {
+    margin-bottom: 0.625rem;
+    text-transform: uppercase;
+    color: $appsSidebarTitle;
   }
-}
 
-.nav-item-text {
-  margin-left: 10px;
-  color: #2c2c2c;
+  &__item {
+    display: flex;
+    margin: 2rem 0;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &__item-text {
+    margin-left: 0.625rem;
+  }
 }
 </style>

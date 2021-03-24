@@ -1,9 +1,10 @@
 <template>
-  <select class="select">
-    <option disabled>Área do cliente</option>
-    <option>Alguma Coisa</option>
-    <option>Outra Coisa</option>
-  </select>
+  <div class="select">
+    <select class="select__select">
+      <option>Área do cliente</option>
+    </select>
+    <img class="select__icon" src="@/assets/images/home.svg" alt="Home" />
+  </div>
 </template>
 
 <script>
@@ -13,14 +14,26 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/sass/abstracts/_variables.scss';
+
 .select {
-  max-width: 236px;
-  width: 100%;
-  height: 36px;
-  margin: 0 20px;
-  padding: 0px 5px;
-  border: 0;
-  border-radius: 4px;
-  background-color: #ececec;
+  position: relative;
+
+  &__select {
+    max-width: 23rem;
+    width: 100%;
+    height: 3.6rem;
+    margin: 0 2rem;
+    padding: 0.3125rem 0.3125rem 0 3rem;
+    border: 0;
+    border-radius: 0.3125rem;
+    background-color: $selectSidebarBg;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 0.8rem;
+    left: 3rem;
+  }
 }
 </style>

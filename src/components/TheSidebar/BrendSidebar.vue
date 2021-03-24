@@ -1,6 +1,6 @@
 <template>
   <figure class="logo">
-    <img src="@/assets/images/igd-logo.svg" alt="logo" />
+    <img src="@/assets/images/igd-logo.svg" alt="Ignição digital" />
   </figure>
 </template>
 
@@ -15,6 +15,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px 0;
+  margin: 3rem 0;
 }
 </style>
