@@ -1,25 +1,27 @@
 <template>
   <section class="filters">
-    <p>Filtros</p>
+    <p class="filters__filters">Filtros</p>
 
     <div class="filters__box">
       <section class="filters__prices">
         <h4 class="filters__title-price">Preços</h4>
 
         <div class="filters__input-box">
-          <input type="radio" /> <label>R$10</label>
+          <input type="radio" /> <label class="filters__price">R$10</label>
         </div>
         <div class="filters__input-box">
-          <input type="radio" /> <label>R$10-$100</label>
+          <input type="radio" /> <label class="filters__price">R$10-$100</label>
         </div>
         <div class="filters__input-box">
-          <input type="radio" /> <label>R$100-$500</label>
+          <input type="radio" />
+          <label class="filters__price">R$100-$500</label>
         </div>
         <div class="filters__input-box">
-          <input type="radio" /> <label>R$500</label>
+          <input type="radio" /> <label class="filters__price">R$500</label>
         </div>
         <div class="filters__input-box">
-          <input type="radio" checked /> <label>Todos</label>
+          <input type="radio" checked />
+          <label class="filters__price">Todos</label>
         </div>
       </section>
 
@@ -27,8 +29,8 @@
 
       <section class="filters__values">
         <div class="filters__box-values">
-          <h4 class="filters__title-values">Valores</h4>
-          <h4>1.99 - 4098</h4>
+          <p class="filters__title-values">Valores</p>
+          <p class="filters__range-values">1.99 - 4098</p>
         </div>
 
         <div class="filters__box-slider">
@@ -39,67 +41,67 @@
       <hr class="line" />
 
       <section class="filters__categories">
-        <h4 class="filters__title-category">Categorias</h4>
+        <p class="filters__title-category">Categorias</p>
 
         <div class="filters__box-category">
           <div>
             <input class="filters__radio" type="checkbox" />
-            <label>Érico Rocha</label>
+            <label class="filters__category-title">Érico Rocha</label>
           </div>
-          <p>1920</p>
+          <p class="filters__category-price">1920</p>
         </div>
 
         <div class="filters__box-category">
           <div>
             <input class="filters__radio" type="checkbox" />
-            <label>Desafio 6 em 7</label>
+            <label class="filters__category-title">Desafio 6 em 7</label>
           </div>
-          <p>1820</p>
+          <p class="filters__category-price">1820</p>
         </div>
 
         <div class="filters__box-category">
           <div>
             <input class="filters__radio" type="checkbox" />
-            <label>Fórmula de lançamento</label>
+            <label class="filters__category-title">Fórmula de lançamento</label>
           </div>
-          <p>462</p>
+          <p class="filters__category-price">462</p>
         </div>
 
         <div class="filters__box-category">
           <div>
             <input class="filters__radio" type="checkbox" />
-            <label>KlickPages</label>
+            <label class="filters__category-title">KlickPages</label>
           </div>
-          <p>6556</p>
+          <p class="filters__category-price">6556</p>
         </div>
 
         <div class="filters__box-category">
           <div>
             <input class="filters__radio" type="checkbox" />
-            <label>Audios</label>
+            <label class="filters__category-title">Audios</label>
           </div>
-          <p>120</p>
+          <p class="filters__category-price">120</p>
         </div>
       </section>
 
       <hr class="line" />
 
       <section class="filters__assessment">
-        <h4 class="filters__title-assessment">Avaliação</h4>
+        <p class="filters__title-assessment">Avaliação</p>
 
         <div class="filters__box-assessment">
           <img src="@/assets/images/5-star.svg" alt="5 Estrelas" />
-          <p>8500</p>
+          <p class="filters__star-assessment">8500</p>
         </div>
 
         <div class="filters__box-assessment">
           <img src="@/assets/images/4-star.svg" alt="4 Estrelas" />
-          <p>3250</p>
+          <p class="filters__star-assessment">3250</p>
         </div>
 
         <div class="filters__box-assessment">
           <img src="@/assets/images/3-star.svg" alt="3 Estrelas" />
-          <p>1120</p>
+          <p class="filters__star-assessment">1120</p>
         </div>
       </section>
 
@@ -117,28 +119,36 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/sass/abstracts/_variables.scss';
+
 .filters {
-  margin-top: 30px;
+  margin-top: 3rem;
+
+  &__filters {
+    font-size: 1.8rem;
+  }
 
   &__box {
-    max-width: 300px;
+    max-width: 30rem;
     width: 100%;
-    margin-top: 20px;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: #fff;
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 0.625rem;
+    background-color: $white;
   }
 
   &__title-price {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: $semiBold;
   }
 
   &__input-box {
-    margin-top: 10px;
+    margin-top: 0.625rem;
   }
 
-  &__input-box input:checked {
-    background-color: red;
+  &__price {
+    font-weight: $light;
   }
 
   &__box-values {
@@ -148,25 +158,30 @@ export default {
   }
 
   &__title-values {
-    margin: 20px 0;
+    margin: 2rem 0;
+    font-size: 1.8rem;
+    font-weight: $semiBold;
+  }
+
+  &__range-values {
+    font-size: 1.8rem;
+    font-weight: $semiBold;
   }
 
   &__slider {
-    max-width: 280px;
+    max-width: 28rem;
     width: 100%;
-    height: 10px;
-    border-radius: 10px;
+    height: 0.625rem;
+    border-radius: 0.625rem;
     appearance: none;
     border: none;
     outline: none;
     opacity: 0.7;
     transition: opacity 0.2s;
-    background: linear-gradient(
-      90deg,
-      rgb(255, 123, 27),
-      60%,
-      rgb(237, 237, 237)
-    );
+
+    background: #ee0979;
+    background: -webkit-linear-gradient(to right, #ee0979, #ff6a00);
+    background: linear-gradient(to right, #ee0979, #ff6a00);
 
     &:hover {
       opacity: 1;
@@ -174,66 +189,92 @@ export default {
 
     &::-webkit-slider-thumb {
       appearance: none;
-      width: 20px;
-      height: 20px;
-      border-radius: 15px;
-      background-color: rgb(255, 123, 27);
+      width: 2rem;
+      height: 2rem;
+      border-radius: 1.5rem;
+      background-color: #ee0979;
     }
   }
 
   &__categories {
-    margin-top: 20px;
+    margin-top: 2rem;
   }
 
   &__title-category {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: $semiBold;
   }
 
   &__box-category {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 0;
+    margin: 1rem 0;
   }
 
   &__radio {
-    margin-right: 10px;
+    margin-right: 0.625rem;
+  }
+
+  &__category-title {
+    font-weight: $light;
+  }
+
+  &__category-price {
+    font-size: 1.5rem;
+    font-weight: $light;
   }
 
   &__assessment {
-    margin-top: 20px;
+    margin-top: 2rem;
   }
 
   &__title-assessment {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: $semiBold;
+  }
+
+  &__star-assessment {
+    font-size: 1.4rem;
+    font-weight: $light;
   }
 
   &__box-assessment {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 0;
+    margin: 0.625rem 0;
   }
 
   &__box-button {
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 4rem;
   }
 
   &__button {
-    width: 220px;
-    height: 50px;
+    width: 22rem;
+    height: 5rem;
     border: 0;
-    border-radius: 5px;
-    background-color: #ff7b1b;
-    color: #fff;
+    border-radius: 0.3125rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    background: #ee0979;
+    background: -webkit-linear-gradient(to right, #ee0979, #ff6a00);
+    background: linear-gradient(to right, #ee0979, #ff6a00);
+    color: $white;
     cursor: pointer;
+
+    &:hover {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
   }
 }
 
 .line {
   margin-top: 25px;
-  color: rgb(237, 237, 237);
+  color: $black;
 }
 </style>
