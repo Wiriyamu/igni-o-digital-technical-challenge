@@ -2,7 +2,7 @@
   <section class="breadcrumbs">
     <div class="breadcrumbs__left">
       <p class="breadcrumbs__results">Resultados</p>
-      <img src="@/assets/images/divider.svg" alt="Divider" />
+      <img src="@/assets/images/divider.svg" alt="Divisor" />
       <img
         class="breadcrumbs__icons-left"
         src="@/assets/images/home.svg"
@@ -33,10 +33,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '@/assets/sass/abstracts/_variables.scss';
+
 .breadcrumbs {
   display: flex;
   justify-content: space-between;
-  margin: 20px 0;
+  margin: 2rem 0;
 
   &__left {
     display: flex;
@@ -44,27 +46,28 @@ export default {
   }
 
   &__results {
-    margin-right: 30px;
-    font-size: 24px;
+    margin-right: 3rem;
+    font-size: 2.4rem;
   }
 
   &__icons-left,
   &__course {
-    margin-left: 10px;
+    margin-left: 1.5rem;
   }
 
   &__right {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 40px;
-    background-color: #717171;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 4rem;
+    background-color: $orange;
+    cursor: pointer;
   }
 
   &__settings {
-    width: 18px;
+    width: 1.8rem;
   }
 }
 </style>
