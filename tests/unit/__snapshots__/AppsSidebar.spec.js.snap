@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppsSidebar.vue Snapshot component 1`] = `
+<nav class="apps">
+  <p class="apps__title">Apps</p>
+  <ul class="apps__list">
+    <li class="apps__item"><img src="" alt="Email">
+      <p class="apps__item-text">Email</p>
+    </li>
+    <li class="apps__item"><img src="" alt="Conversar">
+      <p class="apps__item-text">Conversar</p>
+    </li>
+    <li class="apps__item"><img src="" alt="Todo">
+      <p class="apps__item-text">Todo</p>
+    </li>
+    <li class="apps__item"><img src="" alt="Calendário">
+      <p class="apps__item-text">Calendário</p>
+    </li>
+  </ul>
+</nav>
+`;

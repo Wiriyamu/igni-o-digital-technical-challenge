@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavbarDashboard.vue Snapshot component 1`] = `
+<nav class="nav">
+  <div class="nav__icons-left"><img class="nav__icon" src="" alt="Todo"><img class="nav__icon" src="" alt="Conversar"><img class="nav__icon" src="" alt="Email"><img class="nav__icon" src="" alt="Calendário"><img class="nav__icon" src="" alt="Favoritos"></div>
+  <div class="nav__icons-right"><img class="nav__icon" src="" alt="Notificações"><img class="nav__icon" src="" alt="Pesquisa">
+    <div class="nav__username">
+      <p class="nav__fullname">Maria Elza</p>
+      <p class="nav__client">Cliente VIP</p>
+    </div><img src="" alt="Usuário">
+  </div>
+</nav>
+`;

@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FiltersDashboard.vue Snapshot component 1`] = `
+<section class="filters">
+  <p class="filters__filters">Filtros</p>
+  <div class="filters__box">
+    <section class="filters__prices">
+      <h4 class="filters__title-price">Preços</h4>
+      <div class="filters__input-box"><input type="radio"> <label class="filters__price">R$10</label></div>
+      <div class="filters__input-box"><input type="radio"> <label class="filters__price">R$10-$100</label></div>
+      <div class="filters__input-box"><input type="radio"><label class="filters__price">R$100-$500</label></div>
+      <div class="filters__input-box"><input type="radio"> <label class="filters__price">R$500</label></div>
+      <div class="filters__input-box"><input type="radio"><label class="filters__price">Todos</label></div>
+    </section>
+    <hr class="line">
+    <section class="filters__values">
+      <div class="filters__box-values">
+        <p class="filters__title-values">Valores</p>
+        <p class="filters__range-values">1.99 - 4098</p>
+      </div>
+      <div class="filters__box-slider"><input class="filters__slider" type="range" min="1.99" max="4049"></div>
+    </section>
+    <hr class="line">
+    <section class="filters__categories">
+      <p class="filters__title-category">Categorias</p>
+      <div class="filters__box-category">
+        <div><input class="filters__radio" type="checkbox"><label class="filters__category-title">Érico Rocha</label></div>
+        <p class="filters__category-price">1920</p>
+      </div>
+      <div class="filters__box-category">
+        <div><input class="filters__radio" type="checkbox"><label class="filters__category-title">Desafio 6 em 7</label></div>
+        <p class="filters__category-price">1820</p>
+      </div>
+      <div class="filters__box-category">
+        <div><input class="filters__radio" type="checkbox"><label class="filters__category-title">Fórmula de lançamento</label></div>
+        <p class="filters__category-price">462</p>
+      </div>
+      <div class="filters__box-category">
+        <div><input class="filters__radio" type="checkbox"><label class="filters__category-title">KlickPages</label></div>
+        <p class="filters__category-price">6556</p>
+      </div>
+      <div class="filters__box-category">
+        <div><input class="filters__radio" type="checkbox"><label class="filters__category-title">Audios</label></div>
+        <p class="filters__category-price">120</p>
+      </div>
+    </section>
+    <hr class="line">
+    <section class="filters__assessment">
+      <p class="filters__title-assessment">Avaliação</p>
+      <div class="filters__box-assessment"><img src="" alt="5 Estrelas">
+        <p class="filters__star-assessment">8500</p>
+      </div>
+      <div class="filters__box-assessment"><img src="" alt="4 Estrelas">
+        <p class="filters__star-assessment">3250</p>
+      </div>
+      <div class="filters__box-assessment"><img src="" alt="3 Estrelas">
+        <p class="filters__star-assessment">1120</p>
+      </div>
+    </section>
+    <div class="filters__box-button"><button class="filters__button">Limpar Filtros</button></div>
+  </div>
+</section>
+`;

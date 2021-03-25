@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SelectSidebar.vue Snapshot component 1`] = `
+<div class="select"><select class="select__select">
+    <option>Área do cliente</option>
+  </select><img class="select__icon" src="" alt="Home"></div>
+`;

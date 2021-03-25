@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BreadcrumbsDashboard.vue Snapshot component 1`] = `
+<section class="breadcrumbs">
+  <div class="breadcrumbs__left">
+    <p class="breadcrumbs__results">Resultados</p><img src="" alt="Divisor"><img class="breadcrumbs__icons-left" src="" alt="Home"><img class="breadcrumbs__icons-left" src="" alt="Flechas">
+    <p class="breadcrumbs__course">Cursos</p>
+  </div>
+  <div class="breadcrumbs__right"><img class="breadcrumbs__settings" src="" alt="Configurações"></div>
+</section>
+`;
